@@ -1,6 +1,6 @@
 <h1>This is my official website</h1>
 
-<p align="center"><a href="https://github.com/Pulithasethnindu/pulithasethnindu.github.io"><img src="https://i.ibb.co/98vnqG6/47a24c6a5805.jpg"></a></p>
+<p align="center" width="50%"><a href="https://github.com/Pulithasethnindu/pulithasethnindu.github.io"><img src="https://i.ibb.co/98vnqG6/47a24c6a5805.jpg"></a></p>
 
 ***
 
