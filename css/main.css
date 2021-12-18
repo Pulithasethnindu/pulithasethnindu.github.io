@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body,
+html {
+    height: 100% !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-dark-ash {
+    background-color: #0e0e0e !important;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.top-bar>div.pb1 {
+    background-color: #a20909;
+    width: 0%;
+    height: 0px;
+}
+
+.top-bar>div.pb2 {
+    background-color: #ce8500;
+    width: 0%;
+    height: 0px;
+}
+
+.bg-img {
+    height: 100vh !important;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.bg-overlay {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}*/
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    position: absolute;
+    bottom: 6.5rem;
+}
+
+.carousel-caption h2{
+    font-weight: 500;
+}
+
+.carousel-caption h2 span {
+    /* color: #a20909; */
+    font-weight: 700;
+}
+
+.navbar {
+    padding: 100px 0;
+	box-shadow: 0 5px 20px 0px #020202e0;
+	border-radius: .25rem !important
+}
+
+.navbar-brand {
+    padding: 5px !important;
+    font-weight: 500;
+}
+
+div#navbarNavDropdown {
+    font-size: 0.8rem;
+}
+
+.navbar .nav-item{
+    padding: 10px 15px;
+    border-radius: 0.2em;
+    margin: 0 5px;
+	transition: 0.2s;
+}
+
+.navbar .nav-item:hover{
+	background: #151515;
+}
+
+.navbar .nav-item:hover .nav-link{
+	color: rgba(255,255,255,.75);
+}
+
+.navbar .nav-link h6{
+	display: inline;
+	font-weight: 350 !important;
+}
+	
+
+.logo-small {
+    width: 100px;
+}
+
+.parallax-img {
+    background-image: url("../images/Backgrounds/WhatsApp Image 2021-08-21 at 3.53.00 PM.jpeg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+    /* border: 0 2px;
+    border-color: #a20909;
+    border-style: solid none; */
+    background-color: black;
+    padding: 80px 0 30px;
+}
+
+h2.section-title {
+    text-align: center;
+    color: #969696;
+    padding: 25px;
+    font-weight: 700;
+}
+
+
+.events-cards .col .card{
+	border: 1px solid rgb(43 43 43 / 38%);
+	border-radius: .25rem !important;
+}
+
+.events-cards .col .card .visit-btn a{
+	background-color: #adb5bda8;
+    color: black;
+    padding: 5px 10px;
+    font-size: 80%;
+    border-radius: 15px;
+	transition: 1s;
+	text-decoration: none;
+}
+
+.events-cards .col .card .visit-btn:hover a{
+	background-color: #adb5bdfa;
+}
+	
+
+/*
+.card-splash{
+    margin: 30px 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(43 43 43 / 38%);
+    box-shadow: 1px 1px 10px #63636352;
+	border-radius: .25rem !important
+}
+
+.bg-video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000e0;
+    z-index: -1;
+}
+
+video.bgvideo{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.card-splash-content {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg/bg.png);
+    background-repeat: none;
+    object-fit: cover;
+    background-size: 100% auto;
+    background-position: center;
+    position: relative;
+    z-index: 5;
+    display: inline-block;
+}
+
+.card-splash-content .content{
+    margin: auto;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.link-visit{
+    transition: 0.2s;
+    padding: 3px;
+}
+
+.link-visit a{
+    color: #cdd3d9;
+    text-decoration: none;
+}
+
+.link-visit:hover{
+    padding: 5px;
+    background-color: #cdd3d9;
+    border-radius: 10px;
+}
+
+.link-visit:hover a, .link-visit a:hover{
+    color: black;
+}
+
+.splash-card-logo1{
+    height: 100px;
+    display: inline-block;
+}
+
+.card-splash-content h5{
+    margin-top: 0.5rem;
+}
+*/
+
+
+@media only screen and (max-width: 992px) {
+    .splash-card-logo1{
+        height: 60px;
+        display: inline-block;
+    }
+
+    .card-splash-content h1{
+        font-size: 150%;
+    }
+}
+
+/* Card Flip Animation */
+.card-flip {
+    perspective: 1000px;
+}
+
+.card-flip:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.card-flip,
+.front,
+.back {
+    width: 100%;
+    height: 350px;
+}
+
+.flip {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+/*  */
+.events-cards{
+	padding:30px 0;
+}
+
+.card {
+    border-radius: 0 !important;
+    padding: 10px;
+}
+
+.text-muted{
+    font-size: 1rem !important;
+}
+
+.section-a small.text-muted a{
+    cursor: pointer;
+}
+
+h5.card-main-topic {
+    font-size: 0.85rem;
+    color: #7b7b7b;
+    text-align: center;
+    padding: 10px;
+}
+
+img.card-img-top {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    img.card-img-top {
+        width: 15vh;
+        margin: 0 0 0 15px;
+    }
+}
+
+p.card-text {
+    color: #ffffff8c !important;
+    font-size: 0.8rem;
+}
+
+small.text-muted {
+    font-size: 0.7rem;
+}
+
+.parallax-img2 {
+    background-image: url("../images/Backgrounds/ac3.jpg");
+    min-height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px;
+}
+
+@media only screen and (max-width: 576px) {
+    .parallax-img2 {
+        padding: 10px;
+    }
+}
+
+.section-b{
+    padding: 35px 20px !important;
+	border-radius: 0.25em;
+    background-color: #000000ed;
+}
+
+.blockquote>p {
+    font-size: .95rem !important;
+    text-align: justify;
+    color: #ffffff8c !important;
+    padding: 0 20%;
+}
+
+.section-c div.card{
+    transition: 1s;
+    margin-bottom: 20px;
+	border-radius: 0.25em !important;
+}
+
+.section-c div.card:hover{
+    background-color: #1b1b1b !important;
+}
+
+.section-c div.card .card-footer{
+	background-color: rgba(0,0,0,0) !important;
+}
+
+.section-c div.card .card-footer small{
+	font-size: 0.8em !important;
+}
+
+img.card-img-top2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+	border-radius: 0.25em !important;
+}
+
+img.card-img-top3 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.other-members div.col{
+    margin-bottom: 20px;
+}
+
+.other-members h5{
+    margin-bottom: 0;
+    color: #ffffffbf;
+}
+
+@media only screen and (max-width: 576px) {
+    .other-members {
+        padding: 0 20px;
+    }
+}
+
+.section-d{
+    font-size: .9em;
+}
+
+.section-d .board-row div.card{
+    transition: 1s;
+    margin-bottom: 20px;
+	border-radius: 0.25em !important;
+}
+
+.section-d .board-row div.card:hover{
+    background-color: #1b1b1b !important;
+}
+
+.section-d .board-row div.card img{
+	border-radius: 0.25em !important;
+}
+
+
+input.form-control, textarea.form-control {
+    background: #40404040;
+	border-radius: 0.25em;
+    background: #40404040;
+    border-style: none none none none;
+    border-width: 3px;
+    padding: 2px 10px;
+	font-weight: 100;
+}
+
+
+input.form-control:focus, textarea.form-control:focus {
+    color: black !important;
+    background: #969696;
+    border-color: white;
+    box-shadow: 0 0 black;
+}
+
+.section-d button{
+	font-size: .9em;
+	border-radius: 0.25em !important;
+}
+
+
+table{
+    color: #636a73 !important;
+}
+
+table td.topic{
+    font-weight: 500;
+    color: white;
+}
+
+.contact-card{
+	border-radius: 0.25em !important;
+}
+
+.parallax-img3 {
+    background-image: url("../images/Backgrounds/WhatsApp Image 2021-08-16 at 7.11.11 PM.jpeg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-overlay {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+.copyrights{
+    background-color: black;
+    padding: 14px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
