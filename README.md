@@ -11,4 +11,4 @@
 ***
 
 > Visit The Website ✏
-<div align="left"><a href="https://pulithasethnindu.github.io/"><img src="https://i.ibb.co/98vnqG6/47a24c6a5805.jpg" width="150" ></a></div>
+<div align="left"><a href="https://pulithasethnindu.github.io/"><img src="https://www.pngkey.com/png/full/131-1312432_website-logo-png-transparent-background-image-black-logo.png" width="150" ></a></div>
