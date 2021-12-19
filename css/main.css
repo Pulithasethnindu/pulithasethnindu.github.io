@@ -508,7 +508,7 @@ table td.topic{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .7);
 }
 
 .copyrights{
@@ -523,3 +523,7 @@ table td.topic{
     font-size: 0.85rem;
     font-weight: 300;
 }
+
+.demo {
+      color: white;
+  }
